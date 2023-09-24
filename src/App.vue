@@ -5,19 +5,26 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+    <img alt="Portait" class="logo" src="@/assets/portrait_big.jpg" width="200"/>
 
     <div class="wrapper">
+      <h1 class="color1">Egor Dudyrev</h1>
+      <h2 class="color3">PhD student in explainable rule-based machine learning</h2>
+      <p>&lt;The website is under construction&gt;</p>
+    </div>
+    
+    
+    <!--<div class="wrapper">
       <HelloWorld msg="You did it!" />
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
       </nav>
-    </div>
+    </div>-->
   </header>
 
-  <RouterView />
+  <!--<RouterView />-->
 </template>
 
 <style scoped>
@@ -25,6 +32,37 @@ header {
   line-height: 1.5;
   max-height: 100vh;
 }
+
+.color1 {
+  text-decoration: none;
+  color: #3d2821;
+  transition: 0.4s; 
+}
+
+.color2 {
+  text-decoration: none;
+  color: #c4e5fb;
+  transition: 0.4s;
+}
+
+.color3 {
+  text-decoration: none;
+  color: #718ca8;
+  transition: 0.4s;
+}
+
+.color4 {
+  text-decoration: none;
+  color: #6b5042;
+  transition: 0.4s;
+}
+
+.color5 {
+  text-decoration: none;
+  color: #8bbcdf;
+  transition: 0.4s;
+}
+
 
 .logo {
   display: block;
@@ -54,6 +92,11 @@ nav a {
 
 nav a:first-of-type {
   border: 0;
+}
+
+h1 {
+  color: color1;
+  font-weight: bold;
 }
 
 @media (min-width: 1024px) {
