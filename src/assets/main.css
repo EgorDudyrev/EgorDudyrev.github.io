@@ -1,23 +1,77 @@
 @import './base.css';
 
+:root{
+  --color_main_dark: #3d2821;
+  --color_main_light: #6b5042;
+  --color_second_dark: #718ca8;
+  --color_second_light: #8bbcdf;
+  --color_second_lightest: #c4e5fb;
+}
+
+
 #app {
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  margin: 0 0; /* auto; */
+  padding: 0 0; /* padding: 2rem; */
 
   font-weight: normal;
 }
 
-a,
-.green {
+a {
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
+  color: var(--color_second_light);
   transition: 0.4s;
 }
 
+h1 {
+  color: var(--color_main_dark);
+  font-weight: bold;
+}
+
+h2 {
+  color: var(--color_main_dark);
+}
+
+header {
+  line-height: 1.5;
+  max-height: 100vh;
+}
+
+.color_main_dark {
+  text-decoration: none;
+  color: var(--color_main_dark);
+  transition: 0.4s; 
+}
+
+.color_main_light {
+  text-decoration: none;
+  color: var(--color_main_light);
+  transition: 0.4s;
+}
+
+.color_second_dark {
+  text-decoration: none;
+  color: var(--color_second_dark);
+  transition: 0.4s;
+}
+
+.color_second_light {
+  text-decoration: none;
+  color: var(--color_second_light);
+  transition: 0.4s;
+}
+
+.color_second_lightest {
+  text-decoration: none;
+  color: var(--color_second_lightest);
+  transition: 0.4s;
+}
+
+
+
 @media (hover: hover) {
   a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
+    background-color: var(--color_second_lightest);
   }
 }
 
@@ -27,9 +81,11 @@ a,
     place-items: center;
   }
 
+  
   #app {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     padding: 0 2rem;
   }
+  
 }
