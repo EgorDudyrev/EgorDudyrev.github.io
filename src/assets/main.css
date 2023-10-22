@@ -8,10 +8,11 @@
   --color_second_lightest: #c4e5fb;
 }
 
+
 #app {
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  margin: 0 0; /* auto; */
+  padding: 0 0; /* padding: 2rem; */
 
   font-weight: normal;
 }
@@ -29,6 +30,11 @@ h1 {
 
 h2 {
   color: var(--color_main_dark);
+}
+
+header {
+  line-height: 1.5;
+  max-height: 100vh;
 }
 
 .color_main_dark {
@@ -63,12 +69,6 @@ h2 {
 
 
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-
 @media (hover: hover) {
   a:hover {
     background-color: var(--color_second_lightest);
@@ -81,9 +81,11 @@ h2 {
     place-items: center;
   }
 
+  
   #app {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     padding: 0 2rem;
   }
+  
 }
