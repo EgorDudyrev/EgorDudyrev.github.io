@@ -4,6 +4,7 @@
     <div id="resume">
         <h1>Egor Dudyrev</h1>
         <h2>PhD student in Explainable rule-based machine learning</h2>
+
         <p>
             I am a 2nd year PhD student in <a href="https://www.univ-lorraine.fr">Université de Lorraine</a> (Nancy, France) and <a href="https://www.hse.ru/">HSE University</a> (Moscow, Russia).
             I am working full-time as a doctorant in <a href="https://www.loria.fr/">Loria</a> research laboratory in Nancy, France (team <a href="https://orpailleur.loria.fr">Orpailleur</a>).
@@ -20,7 +21,7 @@
             <a href="https://www.linkedin.com/in/egor-dudyrev-1b77a8214/"> <font-awesome-icon :icon="['fab', 'linkedin']" class="fa-icon"/> LinkedIn</a>
         </p>
         <br>
-        <p ><i>&lt;The website is under construction&gt;</i></p>
+        <p class="color_comment_light"><i>&lt;The website is under construction&gt;</i></p>
     </div>
 </header>
 </template>
