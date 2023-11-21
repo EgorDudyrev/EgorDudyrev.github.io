@@ -3,13 +3,14 @@
     <img alt="Portait" id="portrait" src="@/assets/portrait_big.jpg"/>
     <div id="resume">
         <h1>Egor Dudyrev</h1>
-        <h2>PhD student in Explainable rule-based machine learning</h2>
-
-        <p>
-            I am a 2nd year PhD student in <a href="https://www.univ-lorraine.fr">Université de Lorraine</a> (Nancy, France) and <a href="https://www.hse.ru/">HSE University</a> (Moscow, Russia).
-            I am working full-time as a doctorant in <a href="https://www.loria.fr/">Loria</a> research laboratory in Nancy, France (team <a href="https://orpailleur.loria.fr">Orpailleur</a>).
-            My main research interests lie in applying the mathematical language of Formal Concept Analysis (FCA) to practical problems of Explainable rule-based machine learning and Ordered data analysis.
-        </p>
+        <h2>PhD student in Rule-based Explainable AI</h2>
+        <ul id="resume_list">
+          <li>2nd year PhD in <a href="https://www.univ-lorraine.fr">Université de Lorraine</a> (Nancy, France)</li>
+          <li>3rd year PhD in <a href="https://www.hse.ru/">HSE University</a> (Moscow, Russia)</li>
+          <li>Full-time doctorant in <a href="https://www.loria.fr/">Loria</a> research laboratory, team <a href="https://orpailleur.loria.fr">Orpailleur</a> (Nancy, France)</li>
+          <li>Interested in applying the theory of <a href="https://en.wikipedia.org/wiki/Formal_concept_analysis">Formal Concept Analysis</a> to the practice of <a href="https://en.wikipedia.org/wiki/Explainable_artificial_intelligence">Explainable AI</a></li>
+        </ul>
+        
         <br>
         <p>
             <!--<b style="font-weight: bold;">Links:</b> -->
@@ -52,12 +53,18 @@ div {
     max-width: 800px;
 }
 
+#resume_list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 
 @media (min-width: 1024px) {
   header {
     place-items: center;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1.25fr;
   };
 }
 </style>
