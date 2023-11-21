@@ -45,6 +45,7 @@ div {
     max-height: 500px;
     display: block;
     justify-self: right;
+    border-radius: 5px;
   }
 
 #resume {
@@ -57,11 +58,6 @@ div {
     place-items: center;
     display: grid;
     grid-template-columns: 1fr 2fr;
-  }
-
-  .fa-icon {
-    color: var(--color_main_dark);
-  }
-  
+  };
 }
 </style>
