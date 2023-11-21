@@ -1,11 +1,15 @@
 @import './base.css';
 
 :root{
-  --color_main_dark: #3d2821;
-  --color_main_light: #6b5042;
-  --color_second_dark: #718ca8;
-  --color_second_light: #8bbcdf;
-  --color_second_lightest: #c4e5fb;
+  --color-prime-dark: #6D8C68;
+  --color-prime-light: #9AD9B0;
+  --color-second-dark: #732C02;
+  --color-second-light: #8F3603;
+  --color-second-lightest: #CB4D04;
+  --color-comment-light: #59533F;
+  --color-comment-darkest: #261E1E;
+
+  --color-background: #181413;
 }
 
 
@@ -19,17 +23,17 @@
 
 a {
   text-decoration: none;
-  color: var(--color_second_light);
+  color: var(--color-second-light); 
   transition: 0.4s;
 }
 
 h1 {
-  color: var(--color_main_dark);
+  color: var(--color-prime-dark);
   font-weight: bold;
 }
 
 h2 {
-  color: var(--color_main_dark);
+  color: var(--color-prime-dark);
 }
 
 header {
@@ -39,31 +43,43 @@ header {
 
 .color_main_dark {
   text-decoration: none;
-  color: var(--color_main_dark);
+  color: var(--color-prime-dark);
   transition: 0.4s; 
 }
 
 .color_main_light {
   text-decoration: none;
-  color: var(--color_main_light);
+  color: var(--color-prime-light);
   transition: 0.4s;
 }
 
 .color_second_dark {
   text-decoration: none;
-  color: var(--color_second_dark);
+  color: var(--color-second-dark);
   transition: 0.4s;
 }
 
 .color_second_light {
   text-decoration: none;
-  color: var(--color_second_light);
+  color: var(--color-second-light);
   transition: 0.4s;
 }
 
 .color_second_lightest {
   text-decoration: none;
-  color: var(--color_second_lightest);
+  color: var(--color-second-lightest);
+  transition: 0.4s;
+}
+
+.color_comment_light {
+  text-decoration: none;
+  color: var(--color-comment-light);
+  transition: 0.4s;
+}
+
+.color_comment_darkest {
+  text-decoration: none;
+  color: var(--color-comment-darkest);
   transition: 0.4s;
 }
 
@@ -71,7 +87,10 @@ header {
 
 @media (hover: hover) {
   a:hover {
-    background-color: var(--color_second_lightest);
+    /*background-color: var(--color-comment-darkest);*/
+    color: var(--color-second-lightest);
+    transition: 0.2s; 
+    /*text-decoration: underline;*/
   }
 }
 
