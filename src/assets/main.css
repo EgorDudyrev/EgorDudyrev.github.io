@@ -4,10 +4,12 @@
   --color-prime-dark: #6D8C68;
   --color-prime-light: #9AD9B0;
   --color-second-dark: #732C02;
-  --color-second-light: #AD4203;
+  --color-second-light: #8F3603;
   --color-second-lightest: #CB4D04;
   --color-comment-light: #59533F;
   --color-comment-darkest: #261E1E;
+
+  --color-background: #181413;
 }
 
 
@@ -21,7 +23,7 @@
 
 a {
   text-decoration: none;
-  color: var(--color-second-lightest); 
+  color: var(--color-second-light); 
   transition: 0.4s;
 }
 
@@ -85,7 +87,8 @@ header {
 
 @media (hover: hover) {
   a:hover {
-    background-color: var(--color-comment-darkest);
+    /*background-color: var(--color-comment-darkest);*/
+    color: var(--color-second-lightest);
     /*text-decoration: underline;*/
   }
 }
