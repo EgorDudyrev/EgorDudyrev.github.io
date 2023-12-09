@@ -12,6 +12,9 @@
   --color-background: #181818;
 }
 
+body {
+  transition: 0s;
+}
 
 #app {
   max-width: 1280px;
@@ -24,7 +27,7 @@
 a {
   text-decoration: none;
   color: var(--color-second-dark); 
-  transition: 0.4s;
+  /*transition: 0.4s;*/
 }
 
 h1 {
@@ -48,43 +51,43 @@ header {
 .color_main_dark {
   text-decoration: none;
   color: var(--color-prime-dark);
-  transition: 0.4s; 
+  /*transition: 0.4s; */
 }
 
 .color_main_light {
   text-decoration: none;
   color: var(--color-prime-light);
-  transition: 0.4s;
+  /*transition: 0.4s;*/
 }
 
 .color_second_dark {
   text-decoration: none;
   color: var(--color-second-dark);
-  transition: 0.4s;
+  /*transition: 0.4s;*/
 }
 
 .color_second_light {
   text-decoration: none;
   color: var(--color-second-light);
-  transition: 0.4s;
+  /*transition: 0.4s;*/
 }
 
 .color_second_lightest {
   text-decoration: none;
   color: var(--color-second-lightest);
-  transition: 0.4s;
+  /*transition: 0.4s;*/
 }
 
 .color_comment_light {
   text-decoration: none;
   color: var(--color-comment-light);
-  transition: 0.4s;
+  /*transition: 0.4s;*/
 }
 
 .color_comment_darkest {
   text-decoration: none;
   color: var(--color-comment-darkest);
-  transition: 0.4s;
+  /*transition: 0.4s;*/
 }
 
 
