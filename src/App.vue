@@ -22,6 +22,10 @@ const posts = ref([
     type: 'tutorial',
     language: 'English',
     venue: 'Travaux Dirigés IDMC',
+    links: [
+      ['Google Colab', 'https://colab.research.google.com/github/EgorDudyrev/expailleur/blob/main/Mining%20interesting%20patterns%20in%20complex_data%20(TD%20DM%20IDMC).ipynb'],
+      ['GitHub', 'https://github.com/EgorDudyrev/expailleur/blob/main/Mining%20interesting%20patterns%20in%20complex_data%20(TD%20DM%20IDMC).ipynb']
+    ],
     tags: ['Paspailleur', 'Binary data', 'Tabular data', 'Ngrams', 'Binary classification'],
     published: 'Dec 09, 2023',
     event_date: 'Nov 24, 2023',
@@ -32,10 +36,13 @@ const posts = ref([
   {
     id: 5928101,
     title: 'Data Complexity',
-    subtitle: 'An FCA based approach',
+    subtitle: 'An FCA-based approach',
     type: 'research paper',
     language: 'English',
     venue: 'IJAR',
+    links: [
+      ["Publisher's page", 'https://www.sciencedirect.com/science/article/abs/pii/S0888613X23002153?via%3Dihub'],
+    ],
     tags: ['FCA', 'Binary data', 'Data Analysis'],
     published: 'Dec 09, 2023',
     event_date: 'Nov 23, 2023',
@@ -47,8 +54,14 @@ const posts = ref([
       And we have already planned some projects where we will apply these findings to the real-world industrial data.
       <br>
       The paper speaks in the language of Formal Concept Analysis, so it might be hard to read for people with no FCA background. 
-      At the same time, it could be a nice place to learn lots of specific terminology like intents, pseudo-intents, keys, minimum generators, etc.`
-
+      At the same time, it could be a nice place to learn lots of specific terminology like intents, pseudo-intents, keys, minimum generators, etc.
+      <br>
+      From the practical perspective, the paper motivated us to create a Python package [Caspailleur](https://github.com/EgorDudyrev/caspailleur), that performs many FCA-related computations efficiently.
+      One can also check out the usage examples of Caspailleur in the [Expailleur](https://github.com/EgorDudyrev/expailleur) repository.
+      All the examples run in Google Colab.
+      <br>
+      Finally, the preliminary results of the paper were presented at the [CLA 2022](https://cs.ttu.ee/events/cla2022/) conference and the SmartFCA reunion in January 2023.
+      `
   },
 ])
 </script>

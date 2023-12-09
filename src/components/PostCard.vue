@@ -25,17 +25,28 @@ const description_marked = computed(() => marked(props.post.description))
             </span>
             <span id="event_date">{{ post.event_date }}</span>
         </header>
-        <div id="tags">
+        <div id="links" v-if="post.links">
+            <ul id="links_list">
+                <span class="line_header">Links</span>
+                <li class="link" v-for="[name, url] in post.links" :key="name">
+                    <a :href=url>{{name}}</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="tags" v-if="post.tags">
             <ul id="tags_list">
-                <span class="line_header">Tags</span>
+                <span class="line_header">Tags</span>    
                 <li class="tag " v-for="tag in post.tags" :key="tag">
                     {{ tag }}
                 </li>
             </ul>
         </div>
+        
         <div v-if="post.language != 'English'">
             <span class="line_header">Important</span> The {{ post.type }} is in {{ post.language }}
         </div>
+        
         <br/>
 
         <p v-html="description_marked"></p>
@@ -59,17 +70,23 @@ const description_marked = computed(() => marked(props.post.description))
 }
 */
 
-#tags_list {
+
+ul {
     list-style-type: none;
     justify-content: space-around;
     /* Remove default padding from major browsers */
     padding: 0;
     /* Hide the default decorations for li items */
 }
-#tags_list li::after {
+ul li {
+    margin: 2px;
+    border-radius: 5px;
+    display: inline-block;
+}
+ul li::after {
     content: ",";
 }
-#tags_list li:last-child::after {
+ul li:last-child::after {
     content: "";
 }
 
