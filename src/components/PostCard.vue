@@ -9,7 +9,10 @@ const props = defineProps({
     }
 })
 
+const expanded = ref(false)
 const description_marked = computed(() => marked(props.post.description))
+
+const msg_to_expand = computed(() =>  {return expanded.value ? 'Less...' : 'More...'})
 </script>
 
 <template>
@@ -47,18 +50,37 @@ const description_marked = computed(() => marked(props.post.description))
             <span class="line_header">Important</span> The {{ post.type }} is in {{ post.language }}
         </div>
         
-        <br/>
-
-        <p v-html="description_marked"></p>
-        <br/>
-        <p class="color_comment_dark">
-            <span class="line_header">Published on</span> {{ post.published }}
-            <span class="line_header" v-if="post.edited">Edited on</span> {{ post.edited }}
-        </p>
+        <Collapse id="description" :when="expanded">
+            <br/>
+            <p v-html="description_marked"></p>
+            <br/>
+            <p class="color_comment_dark">
+                <span class="line_header">Published on</span> {{ post.published }}
+                <span class="line_header" v-if="post.edited">Edited on</span> {{ post.edited }}
+            </p>
+        </Collapse>
+        <button v-on:click="expanded = !expanded">{{ msg_to_expand }}</button>
+        
     </div>
 </template>
 
 <style scoped>
+button {
+    background-color: transparent;
+    color: var(--color-comment-dark);
+    border: none;
+    padding-left: 0px;
+    cursor: pointer;
+}
+button:hover {
+    color: var(--color-prime-light);
+    transition: 0.2s;
+}
+
+#description {
+    transition: height 300ms cubic-bezier(0.3, 0, 0.6, 1);
+}
+
 .tag {
     margin: 2px;
 
