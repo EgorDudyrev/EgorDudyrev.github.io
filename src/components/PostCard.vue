@@ -12,7 +12,7 @@ const props = defineProps({
 const expanded = ref(false)
 const description_marked = computed(() => marked(props.post.description))
 
-const msg_to_expand = computed(() =>  {return expanded.value ? 'Less...' : 'More...'})
+const msg_to_expand = computed(() =>  {return expanded.value ? '...less' : '...more'})
 </script>
 
 <template>
@@ -59,7 +59,9 @@ const msg_to_expand = computed(() =>  {return expanded.value ? 'Less...' : 'More
                 <span v-if="post.edited">and edited on</span> {{ post.edited }}
             </p>
         </Collapse>
-        <button v-on:click="expanded = !expanded">{{ msg_to_expand }}</button>
+        <div class="align_right">
+            <button v-on:click="expanded = !expanded">{{ msg_to_expand }}</button>
+        </div>
         
     </div>
 </template>
@@ -75,6 +77,10 @@ button {
 button:hover {
     color: var(--color-prime-light);
     transition: 0.2s;
+}
+
+.align_right {
+    text-align: right;
 }
 
 #description {
@@ -136,7 +142,7 @@ ul li:last-child::after {
     margin: 5px;
     padding: 5px;
 
-    max-width: 500px;
+    max-width: 600px;
     min-width: 50px;
     height: auto;
     
