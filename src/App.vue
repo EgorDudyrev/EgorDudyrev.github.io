@@ -45,6 +45,7 @@ const posts = ref([
     ],
     tags: ['FCA', 'Binary data', 'Data Analysis'],
     published: 'Dec 09, 2023',
+    edited: 'Jan 21, 2062',
     event_date: 'Nov 23, 2023',
     description: 
       `The paper, published in International Journal of Approximate Reasoning (Q1).

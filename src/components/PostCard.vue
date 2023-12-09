@@ -51,7 +51,10 @@ const description_marked = computed(() => marked(props.post.description))
 
         <p v-html="description_marked"></p>
         <br/>
-        <p id="publication_date"><span class="line_header">Published on</span> {{ post.published }}</p>
+        <p class="color_comment_dark">
+            <span class="line_header">Published on</span> {{ post.published }}
+            <span class="line_header" v-if="post.edited">Edited on</span> {{ post.edited }}
+        </p>
     </div>
 </template>
 
@@ -101,8 +104,6 @@ ul li:last-child::after {
     text-align: right;
     padding-left: 5px;
 }
-
-
 
 .post-card {
     /*background-color: var(--vt-c-black-soft);*/
