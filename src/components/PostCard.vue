@@ -1,11 +1,15 @@
 <script setup>
+import { marked } from 'marked'
+import { ref, computed } from 'vue'
 
-defineProps({
+const props = defineProps({
     post: {
         type: Object,
         required: true,
     }
 })
+
+const description_marked = computed(() => marked(props.post.description))
 </script>
 
 <template>
@@ -34,7 +38,7 @@ defineProps({
         </div>
         <br/>
 
-        <p style="white-space: pre-wrap;">{{ post.description }}</p>
+        <p v-html="description_marked"></p>
         <br/>
         <p id="publication_date"><span class="line_header">Published on</span> {{ post.published }}</p>
     </div>
@@ -104,7 +108,3 @@ defineProps({
     transition: 0.2s;
 }
 </style>
-
-
-
-

@@ -25,7 +25,9 @@ const posts = ref([
     tags: ['Paspailleur', 'Binary data', 'Tabular data', 'Ngrams', 'Binary classification'],
     published: 'Dec 09, 2023',
     event_date: 'Nov 24, 2023',
-    description: 'Google Colab tutorial on how to find stable concepts in various data. The notebook uses the code of Caspailleur and Paspailleur packages.'
+    description:
+      `Google Colab tutorial on how to find stable concepts in various data.
+      The notebook uses the code of [Caspailleur](www.google.com) and Paspailleur packages.`
   },
   {
     id: 5928101,
@@ -38,14 +40,14 @@ const posts = ref([
     published: 'Dec 09, 2023',
     event_date: 'Nov 23, 2023',
     description: 
-      'The paper, published in International Journal of Approximate Reasoning (Q1). '+
-      'My supervisors and I started working on the paper at the beginning of the year 2022. '+
-      'We set ourselves to find formal ways to measure the data complexity with the means of Formal Concept Analysis (FCA). '+
-      'For example, we say that the data is complex if its concept lattice contains many incomparable concepts. ' + 
-      'And we have already planned some projects where we will apply these findings to the real-world industrial data.'+
-      '\n'+
-      'The paper speaks in the language of Formal Concept Analysis, so it might be hard to read for people with no FCA background. ' + 
-      'At the same time, it could be a nice place to learn lots of specific terminology like intents, pseudo-intents, keys, minimum generators, etc.'
+      `The paper, published in International Journal of Approximate Reasoning (Q1).
+      My supervisors and I started working on the paper at the beginning of the year 2022.
+      We set ourselves to find formal ways to measure the data complexity with the means of Formal Concept Analysis (FCA).
+      For example, we say that the data is complex if its concept lattice contains many incomparable concepts.
+      And we have already planned some projects where we will apply these findings to the real-world industrial data.
+      <br>
+      The paper speaks in the language of Formal Concept Analysis, so it might be hard to read for people with no FCA background. 
+      At the same time, it could be a nice place to learn lots of specific terminology like intents, pseudo-intents, keys, minimum generators, etc.`
 
   },
 ])
