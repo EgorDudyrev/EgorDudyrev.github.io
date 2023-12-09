@@ -26,7 +26,7 @@
             <a href="https://www.linkedin.com/in/egor-dudyrev-1b77a8214/"> <font-awesome-icon :icon="['fab', 'linkedin']" class="fa-icon"/> LinkedIn</a>
         </p>
         <br>
-        <p class="color_comment_light"><i>&lt;The website is under construction&gt;</i></p>
+        <p class="color_comment_darkest">&lt;The website is under construction&gt;</p>
     </div>
   </div>
 

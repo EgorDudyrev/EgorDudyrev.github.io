@@ -82,12 +82,14 @@ header {
   text-decoration: none;
   color: var(--color-comment-light);
   /*transition: 0.4s;*/
+  font-style: italic;
 }
 
 .color_comment_darkest {
   text-decoration: none;
   color: var(--color-comment-darkest);
   /*transition: 0.4s;*/
+  font-style: italic;
 }
 
 

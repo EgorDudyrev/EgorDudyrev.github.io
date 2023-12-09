@@ -54,9 +54,9 @@ const msg_to_expand = computed(() =>  {return expanded.value ? 'Less...' : 'More
             <br/>
             <p v-html="description_marked"></p>
             <br/>
-            <p class="color_comment_dark">
-                <span class="line_header">Published on</span> {{ post.published }}
-                <span class="line_header" v-if="post.edited">Edited on</span> {{ post.edited }}
+            <p class="color_comment_darkest">
+                The post is published on {{ post.published }}
+                <span v-if="post.edited">and edited on</span> {{ post.edited }}
             </p>
         </Collapse>
         <button v-on:click="expanded = !expanded">{{ msg_to_expand }}</button>
