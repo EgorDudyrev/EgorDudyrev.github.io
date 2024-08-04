@@ -15,13 +15,12 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import {
   faUserSecret,
   faGraduationCap,
-  faLocationDot,
-  faCalendarAlt, faLanguage
+  faLocationDot, faCalendarAlt, faLanguage, faFilePdf
 } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faInstagram, faLinkedin, faVuejs } from '@fortawesome/free-brands-svg-icons'
 
 /* add icons to the library */
-library.add(faUserSecret, faGraduationCap, faGithub, faLinkedin, faInstagram, faVuejs, faLocationDot, faCalendarAlt, faLanguage)
+library.add(faUserSecret, faGraduationCap, faGithub, faLinkedin, faInstagram, faVuejs, faLocationDot, faCalendarAlt, faLanguage, faFilePdf)
 
 
 

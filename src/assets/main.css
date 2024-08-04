@@ -83,7 +83,15 @@ header {
   transition: 0.4s;
 }
 
-
+.inline_list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0
+}
+.inline_list li {
+  display: inline;
+  margin-right: 15px;
+}
 
 @media (hover: hover) {
   a:hover {

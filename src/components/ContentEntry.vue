@@ -1,4 +1,6 @@
 <script setup>
+import IconText from '@/components/IconText.vue'
+
 const props = defineProps({
   title: String,
   location: String,
@@ -10,26 +12,23 @@ const props = defineProps({
   language: String,
 })
 
-// const links = ref([{title: 'The link to google', url: 'https://google.com', faicon: ['fas', 'graduation-cap']},
-//  {title: 'The link to yandex', url: 'https://ya.ru'}])
-// const authors = ref([{name: "Amedeo Napoli"}, {name: "Egor Dudyrev"}])
-// const language = 'FR'
 </script>
 
 <template>
   <div>
     <h2>{{ title }}</h2>
-    <span v-show="props.authors">Authors: <span v-for="author in props.authors"> {{ author.name }} &emsp; </span><br></span>
-    <font-awesome-icon :icon="['fas', 'location-dot']" /> {{ props.location }}
-    &emsp;
-    <font-awesome-icon :icon="['fas', 'calendar-alt']" /> {{ props.date }}
-    <span v-show="props.language">&emsp;<font-awesome-icon :icon="['fas', 'language']" /> {{ props.language }}</span>
+    <ul v-show="props.authors" class="inline_list">Authors: <li v-for="author in props.authors"> {{ author.name }}</li></ul>
+    <ul class="inline_list">
+      <li><IconText icon-name="location-dot" :text="props.location"></IconText></li>
+      <li><IconText icon-name="calendar-alt" :text="props.date"></IconText></li>
+      <li><IconText icon-name="language" :text="props.language"></IconText></li>
+    </ul>
     <br>
     Abstract: {{ props.abstract }}
     <br>
-    <li v-for="link in props.links"><a :href="link.url">
-      <font-awesome-icon v-show="link.faicon" :icon="link.faicon" /> {{ link.title }}
-    </a></li>
+    <ul v-show="props.links" class="inline_list">
+      <li v-for="link in props.links"><IconText :url="link.url" :icon-name="link.faicon" :text="link.title"></IconText></li>
+    </ul>
 
     <p class="color_comment_light"><i>Published: {{ props.publicationDate }}</i></p>
   </div>

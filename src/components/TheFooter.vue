@@ -1,13 +1,14 @@
 <script setup>
 
+import IconText from '@/components/IconText.vue'
 </script>
 
 <template>
 <footer>
-  Profile photo by <a href="https://www.instagram.com/ptiza_lisiza/"><font-awesome-icon :icon="['fab', 'instagram']" class="fa-icon"/> Daria Cherdyntseva</a>
+  Profile photo by <IconText url="https://www.instagram.com/ptiza_lisiza/" icon-name="instagram" text="Daria Cherdyntseva"></IconText>
   <br>
-  Website handmade with <a href="https://vuejs.org"><font-awesome-icon :icon="['fab', 'vuejs']" /> Vue.js</a>
-  hosted by <a href="https://pages.github.com"><font-awesome-icon :icon="['fab', 'github']" class="fa-icon"/> Github Pages</a>
+  Website handmade with <IconText url="https://vuejs.org" icon-name="vuejs" text="Vue.js"></IconText>
+  hosted by <IconText url="https://pages.github.com" icon-name="github" text="GitHub Pages"></IconText>
 </footer>
 </template>
 
