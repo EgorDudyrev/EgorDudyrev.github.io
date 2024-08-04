@@ -12,11 +12,16 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* import specific icons */
-import { faUserSecret, faGraduationCap } from '@fortawesome/free-solid-svg-icons'
+import {
+  faUserSecret,
+  faGraduationCap,
+  faLocationDot,
+  faCalendarAlt, faLanguage
+} from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faInstagram, faLinkedin, faVuejs } from '@fortawesome/free-brands-svg-icons'
 
 /* add icons to the library */
-library.add(faUserSecret, faGraduationCap, faGithub, faLinkedin, faInstagram, faVuejs)
+library.add(faUserSecret, faGraduationCap, faGithub, faLinkedin, faInstagram, faVuejs, faLocationDot, faCalendarAlt, faLanguage)
 
 
 

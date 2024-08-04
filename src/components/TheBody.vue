@@ -1,11 +1,33 @@
 <script setup>
 
+import ContentEntry from '@/components/ContentEntry.vue'
+import { ref } from 'vue'
+
+const entries = ref([
+  {
+    title: 'Casual Concept Analysis', type: 'talk',
+    location: 'PhD Pizza time @ LORIA / INRIA, Nancy, France',
+    date: 'Jun 10, 2024',
+    language: 'EN',
+    abstract:
+      'During the talk, we will discuss how one can find stable patterns and implications in the datasets using Formal Concept Analysis. The field of FCA has a strong mathematical background in Lattice and Set theories. However, in this talk, I will omit the formal definitions and I will rely more on the semantics of FCA that mimic some ways humans understand the world (and data).\n' +
+      'So we will consider some real-world datasets and we will use FCA-based software.  With this tool we will find the implications like “if values of a numerical column lie in interval X and values of a categorical column belong to set Y, then all values of a textual column contain n-grams Z”.\n' +
+      'I hope that the presented techniques will help you with your data analysis tasks, and that your future success stories will help us improve and promote the presented techniques.',
+    links: [{title: 'Slides', url:'...', faicon: ['fas', 'file-pdf']}, {title: 'LinkedIn post', url:'...', faicon:['fab', 'linkedin']}],
+    publicationDate: 'Aug 4, 2024'
+  }
+])
 </script>
 
 <template>
 <body>
   <section>
     <h1>Talks</h1>
+    <!--<div v-for="entry in entries"><ContentEntry v-bind="entry"></ContentEntry></div>-->
+    <ContentEntry v-for="entry in entries" v-bind="entry"></ContentEntry>
+
+    HELSLSDF
+
 
     <h2>Casual Concept Analysis</h2>
     Where: PhD Pizza time @ LORIA / INRIA, Nancy, France
