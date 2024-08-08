@@ -26,7 +26,7 @@ const props = defineProps({
     <ul v-show="props.links" class="inline_list">
       <li v-for="link in props.links"><IconText :url="link.url" :icon-name="link.faicon" :text="link.title"></IconText></li>
     </ul>
-    <details>
+    <details v-if="props.abstract">
       <summary>Abstract: </summary>
       <div class="abstract">{{ props.abstract }}</div>
       <br>
