@@ -23,13 +23,14 @@ const props = defineProps({
       <li><IconText icon-name="calendar-alt" :text="props.date"></IconText></li>
       <li><IconText icon-name="language" :text="props.language"></IconText></li>
     </ul>
-    <br>
-    Abstract: {{ props.abstract }}
-    <br>
     <ul v-show="props.links" class="inline_list">
       <li v-for="link in props.links"><IconText :url="link.url" :icon-name="link.faicon" :text="link.title"></IconText></li>
     </ul>
-
+    <details>
+      <summary>Abstract: </summary>
+      <div class="abstract">{{ props.abstract }}</div>
+      <br>
+    </details>
     <p class="color_comment_light"><i>Published: {{ props.publicationDate }}</i></p>
   </div>
 </template>
@@ -38,4 +39,19 @@ const props = defineProps({
 .color_comment_light {
   text-align: right;
 }
+
+.abstract {
+  white-space: pre-line;
+  margin-left: 3vh;
+}
+
+details[open] > summary {
+  color: var(--color-prime-dark);
+  transition: 0.4s;
+}
+details > summary:hover {
+  color: var(--color-prime-light);
+  transition: 0.4s;
+}
+
 </style>
