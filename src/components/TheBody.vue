@@ -1,9 +1,10 @@
 <script setup>
 
 import ContentEntry from '@/components/ContentEntry.vue'
-import { ref } from 'vue'
+import { onMounted, ref, watchEffect } from 'vue'
+import EventService from "@/services/EventService.js";
 
-const entries = ref([
+/* const entries = ref([
   {
     title: 'Casual Concept Analysis', type: 'talk',
     location: 'PhD Pizza time @ LORIA / INRIA, Nancy, France',
@@ -17,7 +18,19 @@ const entries = ref([
     publicationDate: 'Aug 4, 2024',
     authors: [{name:'Egor Dudyrev'}]
   }
-])
+])*/
+
+const entries = ref(null);
+onMounted(() => {
+  watchEffect(() => {
+    entries.value = null;
+    EventService.getEntries()
+      .then((response) => {
+        entries.value = response.data;
+      });
+    console.log(entries);
+  });
+});
 </script>
 
 <template>
