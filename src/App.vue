@@ -1,6 +1,4 @@
 <script setup>
-// import { RouterLink, RouterView } from 'vue-router'
-// import HelloWorld from './components/HelloWorld.vue'
 import TheHeader from './components/TheHeader.vue'
 import TheBody from '@/components/TheBody.vue'
 import TheFooter from '@/components/TheFooter.vue'
@@ -14,8 +12,24 @@ import TheFooter from '@/components/TheFooter.vue'
   <!--<RouterView />-->
 </template>
 
+<style scoped>
+#overview {
+  min-height: 80vh;
+  vertical-align: middle;
+  padding-top: 10%;
+}
+
+#posts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+</style>
+
+
 <script>
-  export default {
-    name: 'App'
-  }
+export default {
+  name: 'App'
+}
 </script>
