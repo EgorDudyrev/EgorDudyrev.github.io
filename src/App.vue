@@ -13,18 +13,6 @@ import TheFooter from '@/components/TheFooter.vue'
 </template>
 
 <style scoped>
-#overview {
-  min-height: 80vh;
-  vertical-align: middle;
-  padding-top: 10%;
-}
-
-#posts {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
 </style>
 
 
