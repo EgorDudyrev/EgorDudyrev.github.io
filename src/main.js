@@ -2,9 +2,11 @@ import './assets/main.css'
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
+import { Collapse } from 'vue-collapsed'
 
 import App from './App.vue'
 import router from './router'
+
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 
@@ -24,6 +26,7 @@ library.add(faUserSecret, faGraduationCap, faGithub, faLinkedin)
 
 createApp(App)
 .component('font-awesome-icon', FontAwesomeIcon)
+.component('Collapse', Collapse)
 .use(createPinia())
 .use(router)
 .mount('#app')

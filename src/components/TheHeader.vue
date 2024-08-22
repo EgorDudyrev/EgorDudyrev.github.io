@@ -1,9 +1,13 @@
-<template>  
-<header>
+<template>
+  <div id="the_header">
     <img alt="Portait" id="portrait" src="@/assets/portrait_big.jpg"/>
     <div id="resume">
+      <header>
+        <span>
         <h1>Egor Dudyrev</h1>
         <h2>PhD student in Rule-based Explainable AI</h2>
+      </span>
+      </header>
         <ul id="resume_list">
           <li>2nd year PhD in <a href="https://www.univ-lorraine.fr">Université de Lorraine</a> (Nancy, France)</li>
           <li>3rd year PhD in <a href="https://www.hse.ru/">HSE University</a> (Moscow, Russia)</li>
@@ -22,9 +26,10 @@
             <a href="https://www.linkedin.com/in/egor-dudyrev-1b77a8214/"> <font-awesome-icon :icon="['fab', 'linkedin']" class="fa-icon"/> LinkedIn</a>
         </p>
         <br>
-        <p class="color_comment_light"><i>&lt;The website is under construction&gt;</i></p>
+        <p class="color_comment_darkest">&lt;The website is under construction&gt;</p>
     </div>
-</header>
+  </div>
+
 </template>
 
 <script>
@@ -34,10 +39,12 @@
 </script>
 
 <style scoped>
-
-div {
-    padding-left: 1vw;
-    padding-right: 1vw;
+#the_header {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
 }
 
 #portrait {
@@ -47,24 +54,15 @@ div {
     display: block;
     justify-self: right;
     border-radius: 5px;
-  }
+}
 
 #resume {
-    max-width: 800px;
+   min-width: 100px;
+   padding-left: 5px;
 }
 
 #resume_list {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-
-@media (min-width: 1024px) {
-  header {
-    place-items: center;
-    display: grid;
-    grid-template-columns: 1fr 1.25fr;
-  };
+  padding: 2px;
 }
 </style>
