@@ -1,5 +1,15 @@
+<script>
+import IconText from '@/components/IconText.vue'
+
+export default {
+  name: 'TheHeader',
+  components: { IconText }
+}
+</script>
+
+
 <template>
-  <div id="the_header">
+<header>
     <img alt="Portait" id="portrait" src="@/assets/portrait_big.jpg"/>
     <div id="resume">
       <header>
@@ -16,15 +26,12 @@
         </ul>
         
         <br>
-        <p>
-            <!--<b style="font-weight: bold;">Links:</b> -->
-            <a href="https://github.com/EgorDudyrev"> <font-awesome-icon :icon="['fab', 'github']" class="fa-icon"/> GitHub</a>
-            &emsp;
-            <a href="https://scholar.google.com/citations?user=6Akz9I8AAAAJ&hl=en&oi=ao"> <font-awesome-icon :icon="['fas', 'graduation-cap']" class="fa-icon"/> Google Scholar</a>
-            &emsp;
-            <!--<a href="https://dblp.org/pid/294/3938.html">DBLP</a>,-->
-            <a href="https://www.linkedin.com/in/egor-dudyrev-1b77a8214/"> <font-awesome-icon :icon="['fab', 'linkedin']" class="fa-icon"/> LinkedIn</a>
-        </p>
+        <ul class="inline_list">
+          <li><IconText url="https://www.github.com/EgorDudyrev" iconName="github" text="GitHub"></IconText></li>
+          <li><IconText url="https://scholar.google.com/citations?user=6Akz9I8AAAAJ&hl=en&oi=ao" iconName="graduation-cap" text="Google Scholar"></IconText></li>
+          <li><IconText url="https://www.linkedin.com/in/egor-dudyrev-1b77a8214/" iconName="linkedin" text="LinkedIn"></IconText></li>
+        </ul>
+
         <br>
         <p class="color_comment_darkest">&lt;The website is under construction&gt;</p>
     </div>
@@ -32,11 +39,6 @@
 
 </template>
 
-<script>
-  export default {
-    name: 'TheHeader'
-  }
-</script>
 
 <style scoped>
 #the_header {

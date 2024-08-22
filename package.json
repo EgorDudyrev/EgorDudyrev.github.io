@@ -16,6 +16,8 @@
     "@fortawesome/free-regular-svg-icons": "^6.4.2",
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "@fortawesome/vue-fontawesome": "^3.0.3",
+    "axios": "^1.7.3",
+    "json-server": "^1.0.0-beta.1",
     "marked": "^11.0.1",
     "pinia": "^2.1.6",
     "vue": "^3.3.4",

@@ -92,18 +92,15 @@ header {
   font-style: italic;
 }
 
-
-header {
-  background-color: var(--vt-c-black-soft); /*var(--vt-c-black-soft);*/
-  border-radius: 2px;
-
-  align-items: baseline;
-  justify-content: space-between;
-
-  padding: 0px 2px;
-  display: flex;
+.inline_list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0
 }
-
+.inline_list li {
+  display: inline;
+  margin-right: 15px;
+}
 
 @media (hover: hover) {
   a:hover {
@@ -115,12 +112,6 @@ header {
 }
 
 @media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  
   #app {
     display: grid;
     grid-template-columns: 1fr;
