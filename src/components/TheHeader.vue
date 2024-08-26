@@ -9,14 +9,12 @@ export default {
 
 
 <template>
-<header>
+<header id="the_header">
     <img alt="Portait" id="portrait" src="@/assets/portrait_big.jpg"/>
     <div id="resume">
       <header>
-        <span>
         <h1>Egor Dudyrev</h1>
         <h2>PhD student in Rule-based Explainable AI</h2>
-      </span>
       </header>
         <ul id="resume_list">
           <li>2nd year PhD in <a href="https://www.univ-lorraine.fr">Université de Lorraine</a> (Nancy, France)</li>
@@ -35,8 +33,7 @@ export default {
         <br>
         <p class="color_comment_darkest">&lt;The website is under construction&gt;</p>
     </div>
-  </div>
-
+</header>
 </template>
 
 
