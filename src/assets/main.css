@@ -12,12 +12,25 @@
   --color-background: #181818;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+/**
+ * Disable smooth scrolling when users have prefers-reduced-motion enabled
+ */
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 body {
   transition: 0s;
 }
 
 #app {
-  max-width: 1280px;
+  /* max-width: 1280px; */
   margin: 0 0; /* auto; */
   padding: 0 0; /* padding: 2rem; */
 

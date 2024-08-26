@@ -6,10 +6,12 @@ import TheFooter from '@/components/TheFooter.vue'
 
 
 <template>
+  <div id="theApp">
   <TheHeader></TheHeader>
   <TheBody></TheBody>
-  <TheFooter></TheFooter>
+  <footer><TheFooter></TheFooter></footer>
   <!--<RouterView />-->
+  </div>
 </template>
 
 <style scoped>

@@ -9,7 +9,7 @@ export default {
 
 
 <template>
-<header id="the_header">
+<header id="theHeader">
     <img alt="Portait" id="portrait" src="@/assets/portrait_big.jpg"/>
     <div id="resume">
       <header>
@@ -38,12 +38,13 @@ export default {
 
 
 <style scoped>
-#the_header {
+#theHeader {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
     gap: 10px;
+    height: 95vh;
 }
 
 #portrait {
