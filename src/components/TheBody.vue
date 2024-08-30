@@ -19,37 +19,6 @@ function entriesByType (type) {
   return entries.value ? entries.value.filter(v => v.type === type) : null
 }
 
-function smoothScroll(target, duration) {
-  var target = document.querySelector(target);
-  var targetPosition = target.getBoundingClientRect().top;
-  var startPosition = window.pageYOffset;
-  var distance = targetPosition - startPosition;
-  var startTime = null;
-
-  function animation(currentTime) {
-    if (startTime === null) startTime = currentTime;
-    var timeElapsed = currentTime - startTime;
-    var run = easing(timeElapsed, startPosition, distance, duration);
-    window.scrollTo(0, run);
-    if (timeElapsed < duration) requestAnimationFrame(animation);
-  }
-
-  function easing(t, b, c, d) {
-    t /= d / 2;
-    if (t < 1) return c / 2 *t * t + b;
-    t--;
-    return -c / 2 * (t * (t - 2) - 1) + b;
-  }
-
-  requestAnimationFrame(animation);
-}
-
-var talks = document.querySelector('#talks');
-var talksLink = document.querySelector('nav a[href="#talks"]');
-//talksLink.addEventListener('click', function() {
-//  smoothScroll('#talks', 1000);
-//});
-
 </script>
 
 <template>
@@ -119,16 +88,12 @@ body {
 
   scroll-margin-top: 1em;
 
+  max-width: 1000px;
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
   }
-}
-
-.inline_list > li:before {
-  content: "\200B"; /* 1 */
-  position: absolute; /* 2 */
 }
 </style>
