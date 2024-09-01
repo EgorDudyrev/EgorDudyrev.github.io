@@ -9,7 +9,20 @@
   --color-comment-light: #aeaba4; 
   --color-comment-darkest:  #8b877d;
 
-  --color-background: #181818;
+  --color-background: #1c1c1c;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/**
+ * Disable smooth scrolling when users have prefers-reduced-motion enabled
+ */
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 body {
@@ -17,8 +30,8 @@ body {
 }
 
 #app {
-  max-width: 1280px;
-  margin: 0 0; /* auto; */
+  /* max-width: 1280px; */
+  margin: 5px 5px; /* auto; */
   padding: 0 0; /* padding: 2rem; */
 
   font-weight: normal;
@@ -41,11 +54,6 @@ h2 {
 
 h3 {
   color: var(--color-prime-dark);
-}
-
-header {
-  line-height: 1.5;
-  max-height: 100vh;
 }
 
 .color_main_dark {

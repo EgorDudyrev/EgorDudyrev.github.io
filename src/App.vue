@@ -6,25 +6,15 @@ import TheFooter from '@/components/TheFooter.vue'
 
 
 <template>
+  <div id="theApp">
   <TheHeader></TheHeader>
   <TheBody></TheBody>
-  <TheFooter></TheFooter>
+  <footer><TheFooter></TheFooter></footer>
   <!--<RouterView />-->
+  </div>
 </template>
 
 <style scoped>
-#overview {
-  min-height: 80vh;
-  vertical-align: middle;
-  padding-top: 10%;
-}
-
-#posts {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
 </style>
 
 
