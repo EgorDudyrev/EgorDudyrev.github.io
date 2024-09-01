@@ -75,6 +75,16 @@ nav ul li {
   padding-left: 5px;
   padding-right: 5px;
   margin: 0;
+  display: inline-flex;
+}
+
+.inline_list {
+  list-style-type: none;
+  //margin: 0;
+  //padding: 0
+}
+.inline_list li {
+  margin-right: 15px;
 }
 
 body {
@@ -91,9 +101,8 @@ body {
   max-width: 1000px;
 }
 
-@media screen and (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
+
+section {
+  margin-bottom: 2vh;
 }
 </style>

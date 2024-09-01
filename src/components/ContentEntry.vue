@@ -15,7 +15,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <div>
+  <div class="content_entry">
     <h2>{{ title }}</h2>
 
     <ul v-show="props.authors" class="inline_list">Authors: <li v-for="author in props.authors"> {{ author.name }}</li></ul>
@@ -58,6 +58,10 @@ details[open] > summary {
 details > summary:hover {
   color: var(--color-prime-light);
   transition: 0.4s;
+}
+
+.content_entry {
+  margin-bottom: 1vh;
 }
 
 </style>

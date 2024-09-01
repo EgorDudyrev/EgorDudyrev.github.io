@@ -31,7 +31,7 @@ body {
 
 #app {
   /* max-width: 1280px; */
-  margin: 0 0; /* auto; */
+  margin: 5px 5px; /* auto; */
   padding: 0 0; /* padding: 2rem; */
 
   font-weight: normal;
@@ -54,11 +54,6 @@ h2 {
 
 h3 {
   color: var(--color-prime-dark);
-}
-
-header {
-  line-height: 1.5;
-  max-height: 100vh;
 }
 
 .color_main_dark {

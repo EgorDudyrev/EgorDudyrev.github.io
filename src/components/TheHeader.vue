@@ -44,12 +44,12 @@ export default {
     flex-wrap: wrap;
     align-items: center;
     gap: 10px;
-    height: 95vh;
+    min-height: 95vh;
 }
 
 #portrait {
     height: 50vh;
-    min-height: 300px;
+    min-height: 100px;
     max-height: 500px;
     display: block;
     justify-self: right;
