@@ -1,6 +1,18 @@
 {
   "entries": [
     {
+      "title": "Document Classification via Stable Graph Patterns and Conceptual AMR Graphs", "type": "talk",
+      "location": "CONCEPTS 2024 Conference, Cádiz, Spain",
+      "date": "Sep 12, 2024",
+      "language": "EN",
+      "abstract": "",
+      "links": [
+        {"title": "Detailed slides by Eric George Parakal", "url":"https://drive.google.com/file/d/1shSz8-1e2hCPGe1O9qUN73g58CCPMky0/view?usp=sharing", "faicon": "file-pdf"},
+        {"title": "Colourful slides by Egor Dudyrev", "url":"https://drive.google.com/file/d/1dkPVOKQAjwgf32o7B_R8F3zgYmRrQ6L-/view?usp=sharing", "faicon":"file-pdf"}],
+      "publicationDate": "Sep 12, 2024",
+      "authors": [{"name": "Eric George Parakal"}, {"name":"Egor Dudyrev"}, {"name": "Sergei O. Kuznetsov"}, {"name": "Amedeo Napoli"}]
+    },
+    {
       "title": "Casual Concept Analysis", "type": "talk",
       "location": "PhD Pizza time @ LORIA / INRIA, Nancy, France",
       "date": "Jun 10, 2024",
