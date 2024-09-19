@@ -42,7 +42,7 @@
       "date": "Nov 17, 2023",
       "links": [{"title": "GitHub", "url":"https://github.com/EgorDudyrev/paspailleur", "faicon": "github"}, {"title": "PyPI", "url": "https://pypi.org/project/paspailleur/"}],
       "publicationDate": "Sept 19, 2024",
-      "abstract": "An add-on for caspailleur to work with Pattern Structures. A Pattern Structure (D, ⊑) represents a description space D where every two descriptions can be compared by a "less precise" operator ⊑. For example, if D is a set of ngrams then ngram (hello,) is less precise then (hello, world): (hello, ) ⊑ (hello, world), that is every ngram that contains (hello, world) contains (hello,).",
+      "abstract": "An add-on for caspailleur to work with Pattern Structures. A Pattern Structure (D, ⊑) represents a description space D where every two descriptions can be compared by a 'less precise' operator ⊑. For example, if D is a set of ngrams then ngram (hello,) is less precise then (hello, world): (hello, ) ⊑ (hello, world), that is every ngram that contains (hello, world) contains (hello,).",
     },
     {
       "title": "Expailleur", "type": "software",
@@ -55,7 +55,7 @@
       "title": "Git", "type": "teaching",
       "location": "IDMC, Nancy, France",
       "date": "Sept - Oct, 2024",
-      "links": [{"title": "CM 1: Git4Life", "url":"https://drive.google.com/file/d/1kfZzJAz4Oovogd-dF0msivPeflujIfU4/view?usp=sharing", "faicon": "file-pdf"},],
+      "links": [{"title": "CM 1: Git4Life", "url":"https://drive.google.com/file/d/1kfZzJAz4Oovogd-dF0msivPeflujIfU4/view?usp=sharing", "faicon": "file-pdf"}],
       "publicationDate": "Sept 19, 2024",
       "language": "EN",
       "authors": [{"name":"Egor Dudyrev"}],
