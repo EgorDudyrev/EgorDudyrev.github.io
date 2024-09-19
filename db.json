@@ -35,14 +35,14 @@
       "date": "Sep 17, 2024",
       "links": [{"title": "GitHub", "url":"https://github.com/EgorDudyrev/caspailleur", "faicon": "github"}, {"title": "PyPI", "url": "https://pypi.org/project/caspailleur/"}],
       "publicationDate": "Sept 19, 2024",
-      "abstract": "Caspailleur is a python package for mining concepts and implications in binary data with FCA framework. Part of SmartFCA ANR project.",
+      "abstract": "Caspailleur is a python package for mining concepts and implications in binary data with FCA framework. Part of SmartFCA ANR project."
     },
     {
       "title": "Paspailleur (v0.0.3)", "type": "software",
       "date": "Nov 17, 2023",
       "links": [{"title": "GitHub", "url":"https://github.com/EgorDudyrev/paspailleur", "faicon": "github"}, {"title": "PyPI", "url": "https://pypi.org/project/paspailleur/"}],
       "publicationDate": "Sept 19, 2024",
-      "abstract": "An add-on for caspailleur to work with Pattern Structures. A Pattern Structure (D, ⊑) represents a description space D where every two descriptions can be compared by a 'less precise' operator ⊑. For example, if D is a set of ngrams then ngram (hello,) is less precise then (hello, world): (hello, ) ⊑ (hello, world), that is every ngram that contains (hello, world) contains (hello,).",
+      "abstract": "An add-on for caspailleur to work with Pattern Structures. A Pattern Structure (D, ⊑) represents a description space D where every two descriptions can be compared by a 'less precise' operator ⊑. For example, if D is a set of ngrams then ngram (hello,) is less precise then (hello, world): (hello, ) ⊑ (hello, world), that is every ngram that contains (hello, world) contains (hello,)."
     },
     {
       "title": "Expailleur", "type": "software",
@@ -58,7 +58,7 @@
       "links": [{"title": "CM 1: Git4Life", "url":"https://drive.google.com/file/d/1kfZzJAz4Oovogd-dF0msivPeflujIfU4/view?usp=sharing", "faicon": "file-pdf"}],
       "publicationDate": "Sept 19, 2024",
       "language": "EN",
-      "authors": [{"name":"Egor Dudyrev"}],
+      "authors": [{"name":"Egor Dudyrev"}]
     },
     {
       "title": "Data Mining", "type": "teaching",
@@ -104,14 +104,14 @@
       "location": "HSE University",
       "date": "Sept 2019 - Jun 2021",
       "language": "EN",
-      "publicationDate": "Jun 10, 2024",
+      "publicationDate": "Jun 10, 2024"
     },
     {
       "title": "Bachelor Study", "type": "education",
       "location": "Bauman University",
       "date": "Sept 2015 - Jun 2019",
       "language": "RU",
-      "publicationDate": "Jun 10, 2024",
+      "publicationDate": "Jun 10, 2024"
     }
   ]
 }
