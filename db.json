@@ -18,58 +18,72 @@
       "date": "Jun 10, 2024",
       "language": "EN",
       "abstract": "During the talk, we will discuss how one can find stable patterns and implications in the datasets using Formal Concept Analysis. The field of FCA has a strong mathematical background in Lattice and Set theories. However, in this talk, I will omit the formal definitions and I will rely more on the semantics of FCA that mimic some ways humans understand the world (and data).\n So we will consider some real-world datasets and we will use FCA-based software.  With this tool we will find the implications like “if values of a numerical column lie in interval X and values of a categorical column belong to set Y, then all values of a textual column contain n-grams Z”.\n I hope that the presented techniques will help you with your data analysis tasks, and that your future success stories will help us improve and promote the presented techniques.",
-      "links": [{"title": "Slides", "url":"...", "faicon": "file-pdf"}, {"title": "LinkedIn post", "url":"...", "faicon":"linkedin"}],
+      "links": [{"title": "Slides", "url":"https://drive.google.com/file/d/1pz86THVu7yExd0fEUCe31vz9C9rcCHiM/view?usp=sharing", "faicon": "file-pdf"}, {"title": "LinkedIn post", "url":"https://www.linkedin.com/posts/loria_phd-activity-7205914655716769792-rs4L", "faicon":"linkedin"}],
       "publicationDate": "Aug 4, 2024",
       "authors": [{"name":"Egor Dudyrev"}]
     },
     {
       "title": "Неформальное Введение в Анализ Формальных Понятий", "type": "talk",
       "location": "NoML Seminar",
-      "date": "???",
+      "date": "Май 29, 2024",
       "language": "RU",
-      "links": [{"title": "Slides", "url":"...", "faicon": "file-pdf"}],
-      "publicationDate": "???"
+      "links": [{"title": "Страница в Notion (со ссылкой на слайды)", "url":"https://noml.notion.site/baa4ac56a9b64ee7bad330f23801adff?v=89c5698b6a7b458a83f350cad34d786d&p=4e358d11172d497dbc5637c2c8478899&pm=s"}, {"title": "Запись на YouTube", "url":"https://youtu.be/G6C-dYcWL44"}],
+      "publicationDate": "Сент 19, 2024"
     },
     {
-      "title": "Caspailleur", "type": "software",
-      "date": "???",
-      "links": [{"title": "GitHub", "url":"...", "faicon": "github"}],
-      "publicationDate": "???"
+      "title": "Caspailleur (v0.2.0)", "type": "software",
+      "date": "Sep 17, 2024",
+      "links": [{"title": "GitHub", "url":"https://github.com/EgorDudyrev/caspailleur", "faicon": "github"}, {"title": "PyPI", "url": "https://pypi.org/project/caspailleur/"}],
+      "publicationDate": "Sept 19, 2024",
+      "abstract": "Caspailleur is a python package for mining concepts and implications in binary data with FCA framework. Part of SmartFCA ANR project.",
     },
     {
-      "title": "Paspailleur", "type": "software",
-      "date": "???",
-      "links": [{"title": "GitHub", "url":"...", "faicon": "github"}],
-      "publicationDate": "???"
+      "title": "Paspailleur (v0.0.3)", "type": "software",
+      "date": "Nov 17, 2023",
+      "links": [{"title": "GitHub", "url":"https://github.com/EgorDudyrev/paspailleur", "faicon": "github"}, {"title": "PyPI", "url": "https://pypi.org/project/paspailleur/"}],
+      "publicationDate": "Sept 19, 2024",
+      "abstract": "An add-on for caspailleur to work with Pattern Structures. A Pattern Structure (D, ⊑) represents a description space D where every two descriptions can be compared by a "less precise" operator ⊑. For example, if D is a set of ngrams then ngram (hello,) is less precise then (hello, world): (hello, ) ⊑ (hello, world), that is every ngram that contains (hello, world) contains (hello,).",
     },
     {
       "title": "Expailleur", "type": "software",
-      "date": "???",
-      "links": [{"title": "GitHub", "url":"...", "faicon": "github"}],
-      "publicationDate": "???"
+      "date": "Oct, 2023",
+      "links": [{"title": "GitHub Repository", "url":"https://github.com/EgorDudyrev/expailleur", "faicon": "github"}],
+      "abstract": "A repository that contains examples of using Caspailleur and Paspailleur packages. Both packages serve for data mining in Python using Formal Concept Analysis (FCA) framework. The difference is that Caspailler (Characteristc-Attribute-Sets-pailleur) mines dependencies in binary data and Paspailleur (Pattern-Structures-pailleur) mines dependencies in complex (i.e. non-binary) data.",
+      "publicationDate": "Sept 19, 2024"
+    },
+    {
+      "title": "Git", "type": "teaching",
+      "location": "IDMC, Nancy, France",
+      "date": "Sept - Oct, 2024",
+      "links": [{"title": "CM 1: Git4Life", "url":"https://drive.google.com/file/d/1kfZzJAz4Oovogd-dF0msivPeflujIfU4/view?usp=sharing", "faicon": "file-pdf"},],
+      "publicationDate": "Sept 19, 2024",
+      "language": "EN",
+      "authors": [{"name":"Egor Dudyrev"}],
     },
     {
       "title": "Data Mining", "type": "teaching",
       "location": "IDMC, Nancy, France",
       "date": "Sept - Nov, 2023",
-      "links": [{"title": "TD 1: Binary data", "url":"...", "faicon": "github"},{"title": "TD 1: Complex data", "url":"...", "faicon": "github"}],
-      "publicationDate": "???",
+      "links": [{"title": "TD 1: Binary data", "url":"https://github.com/EgorDudyrev/expailleur/blob/main/Bob%20Ross%20Paintings%20(TD%20DM%20IDMC%20version).ipynb", "faicon": "github"},{"title": "TD 1: Complex data", "url":"https://github.com/EgorDudyrev/expailleur/blob/main/Mining%20interesting%20patterns%20in%20complex_data%20(TD%20DM%20IDMC).ipynb", "faicon": "github"}],
+      "publicationDate": "Sept 19, 2024",
       "language": "EN"
     },
     {
       "title": "Ordered Sets in Data Analysis", "type": "teaching",
       "location": "HSE University, Moscow, Russia",
       "date": "Sept - Oct, 2022",
-      "publicationDate": "???",
+      "links": [{"title": "Git Repository", "url":"https://github.com/EgorDudyrev/OSDA_course", "faicon": "github"}],
+      "publicationDate": "Sept 19, 2024",
       "language": "EN"
     },
     {
       "title": "Data Complexity: An FCA-based approach", "type": "publication",
       "location": "IJAR",
       "date": "Feb, 2024",
-      "publicationDate": "???",
+      "publicationDate": "Sept 19, 2024",
       "language": "EN",
-      "authors": [{"name":  "Alexey Buzmakov"}, {"name":  "Egor Dudyrev"}]
+      "authors": [{"name":  "Alexey Buzmakov"}, {"name":  "Egor Dudyrev"}, {"name": "Sergei O. Kuznetsov"}, {"name": "Tatiana Makhalova"}, {"name": "Amedeo Napoli"}],
+      "links": [{"title": "Publisher's version", "url": "https://www.sciencedirect.com/science/article/pii/S0888613X23002153"}, {"title": "HAL Preprint", "url": "https://hal.science/hal-03985980/"}]
     },
     {
       "title": "Doctoral Study (WIP)", "type": "education",
@@ -82,20 +96,22 @@
       "title": "Doctoral Study (WIP)", "type": "education",
       "location": "HSE University",
       "date": "Nov 2021 - ...",
-      "publicationDate": "???",
+      "publicationDate": "Jun 10, 2024",
       "language": "EN"
     },
     {
       "title": "Master Study", "type": "education",
       "location": "HSE University",
       "date": "Sept 2019 - Jun 2021",
-      "language": "EN"
+      "language": "EN",
+      "publicationDate": "Jun 10, 2024",
     },
     {
       "title": "Bachelor Study", "type": "education",
       "location": "Bauman University",
       "date": "Sept 2015 - Jun 2019",
-      "language": "RU"
+      "language": "RU",
+      "publicationDate": "Jun 10, 2024",
     }
   ]
 }
