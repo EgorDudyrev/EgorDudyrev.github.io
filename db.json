@@ -55,7 +55,10 @@
       "title": "Git", "type": "teaching",
       "location": "IDMC, Nancy, France",
       "date": "Sept - Oct, 2024",
-      "links": [{"title": "CM 1: Git4Life", "url":"https://drive.google.com/file/d/1kfZzJAz4Oovogd-dF0msivPeflujIfU4/view?usp=sharing", "faicon": "file-pdf"}],
+      "links": [
+        {"title": "CM 1: Git4Life", "url":"https://drive.google.com/file/d/1kfZzJAz4Oovogd-dF0msivPeflujIfU4/view?usp=sharing", "faicon": "file-pdf"},
+        {"title": "CM 2: Git4Exam", "url":"https://drive.google.com/file/d/1lyEGQSEpAUjw1L_Ou7Aa7ynTAFROMeYQ/view?usp=sharing", "faicon": "file-pdf"}
+      ],
       "publicationDate": "Sept 19, 2024",
       "language": "EN",
       "authors": [{"name":"Egor Dudyrev"}]
