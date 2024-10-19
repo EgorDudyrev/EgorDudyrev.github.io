@@ -1,6 +1,18 @@
 {
   "entries": [
     {
+      "title": "Clustering with Stable Pattern Concepts", "type": "talk",
+      "location": "FCA4AI workshop @ ECAI'24, Santiago de Compostela, Spain",
+      "date": "Oct 19, 2024",
+      "language": "EN",
+      "links": [
+        {"title": "Slides", "url": "https://drive.google.com/file/d/15NJ93zcbEwoGiICV51-Jtd5QYowNJ-c3/view?usp=sharing", "faicon": "file-pdf"},
+        {"title": "Paper (Preliminary Proceedings)", "url": "https://fca4ai.hse.ru/mirror/pubs/share/direct/974862483.pdf", "faicon": "file-pdf"}
+      ],
+      "publicationDate": "Oct 19, 2024",
+      "authors": [{"name":"Egor Dudyrev"}]
+    },
+    {
       "title": "Document Classification via Stable Graph Patterns and Conceptual AMR Graphs", "type": "talk",
       "location": "CONCEPTS 2024 Conference, Cádiz, Spain",
       "date": "Sep 12, 2024",
