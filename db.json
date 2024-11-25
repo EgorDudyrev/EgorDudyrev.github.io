@@ -43,10 +43,10 @@
       "publicationDate": "Сент 19, 2024"
     },
     {
-      "title": "Caspailleur (v0.2.0)", "type": "software",
-      "date": "Sep 17, 2024",
+      "title": "Caspailleur (v0.2.1)", "type": "software",
+      "date": "Nov 25, 2024",
       "links": [{"title": "GitHub", "url":"https://github.com/EgorDudyrev/caspailleur", "faicon": "github"}, {"title": "PyPI", "url": "https://pypi.org/project/caspailleur/"}],
-      "publicationDate": "Sept 19, 2024",
+      "publicationDate": "Nov 25, 2024",
       "abstract": "Caspailleur is a python package for mining concepts and implications in binary data with FCA framework. Part of SmartFCA ANR project."
     },
     {
