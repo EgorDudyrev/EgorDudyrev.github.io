@@ -1,6 +1,18 @@
 {
   "entries": [
     {
+      "title": "Кластеризация на правилах или как найти кластеризации, которые легко объяснить", "type": "talk",
+      "location": "NoML seminar",
+      "date": "Feb 12, 2025",
+      "language": "RU",
+      "links": [
+        {"title": "Slides", "url": "https://drive.google.com/file/d/15NJ93zcbEwoGiICV51-Jtd5QYowNJ-c3/view?usp=sharing", "faicon": "file-pdf"},
+        {"title": "Paper", "url": "https://ceur-ws.org/Vol-3911/paper5.pdf", "faicon": "file-pdf"}
+      ],
+      "publicationDate": "Feb 14, 2025",
+      "authors": [{"name":"Egor Dudyrev"}]
+    },
+    {
       "title": "Clustering with Stable Pattern Concepts", "type": "talk",
       "location": "FCA4AI workshop @ ECAI'24, Santiago de Compostela, Spain",
       "date": "Oct 19, 2024",
