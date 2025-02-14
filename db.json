@@ -1,12 +1,6 @@
 {
   "entries": [
     {
-      "title": "Кластеризация на правилах или как найти кластеризации, которые легко объяснить", "type": "talk",
-      "location": "NoML Seminar",
-      "date": "Feb 12, 2025",
-      "language": "RU",      
-    },
-    {
       "title": "Clustering with Stable Pattern Concepts", "type": "talk",
       "location": "FCA4AI workshop @ ECAI'24, Santiago de Compostela, Spain",
       "date": "Oct 19, 2024",
