@@ -141,19 +141,5 @@
       "publicationDate": "Jun 10, 2024",
       "language": "EN"
     },
-    {
-      "title": "Master Study", "type": "education",
-      "location": "HSE University",
-      "date": "Sept 2019 - Jun 2021",
-      "language": "EN",
-      "publicationDate": "Jun 10, 2024"
-    },
-    {
-      "title": "Bachelor Study", "type": "education",
-      "location": "Bauman University",
-      "date": "Sept 2015 - Jun 2019",
-      "language": "RU",
-      "publicationDate": "Jun 10, 2024"
-    }
   ]
 }
