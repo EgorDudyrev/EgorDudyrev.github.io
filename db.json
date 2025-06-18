@@ -1,17 +1,6 @@
 {
   "entries": [
     {
-      "title": "Mining Patterns in Tabular Data -- A Symbolic AI Approach", "type": "talk",
-      "location": "DeepLoria Tutorial @ LORIA/INRIA, Nancy, France",
-      "date": "Jun 18, 2025",
-      "language": "EN",
-      "links": [
-        {"title": "Slides", "url": "https://drive.google.com/file/d/1W2uIas0Qkb-LQndKXISaAmoLpsKC-OWH/view?usp=share_link", "faicon": "file-pdf"}
-      ],
-      "publicationDate": "Jun 18, 2025",
-      "authors": [{"name":"Egor Dudyrev"}]
-    },
-    {
       "title": "Кластеризация на правилах или как найти кластеризации, которые легко объяснить", "type": "talk",
       "location": "NoML seminar",
       "date": "Feb 12, 2025",
